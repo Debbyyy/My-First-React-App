@@ -15,7 +15,7 @@ class MyProfile extends Component {
                     </div>
 
                     <div>
-                        <img src={Debbie} alt="an image" className="avatar" />
+                        <img src={Debbie} alt="user's avatar" className="avatar" />
                     </div>
                 </header>
 
@@ -40,16 +40,16 @@ class MyProfile extends Component {
                     <p className="mb-2 text-gray-500">Most Viewed</p>
 
                     <div className="flex flex-row">
-                        <img src={Food1} alt="an image" className="hero-image rounded-2xl mb-10 mr-5" />
-                        <img src={Food2} alt="an image" className="hero-image rounded-2xl mb-10 mr-5" />
-                        <img src={Food1} alt="an image" className="hero-image rounded-2xl mb-10 mr-5" />
+                        <img src={Food1} alt="a food" className="hero-image rounded-2xl mb-10 mr-5" />
+                        <img src={Food2} alt="a food" className="hero-image rounded-2xl mb-10 mr-5" />
+                        <img src={Food1} alt="a food" className="hero-image rounded-2xl mb-10 mr-5" />
                     </div>
 
                     <div>
                         <p className="mb-2 text-gray-500">This might interest you</p>
                         <div className="bg-black p-14 md:p-20 relative rounded-3xl">
                             <p>Spaghetti recipe</p>
-                            <img src={Food1} alt="an image" className="second-image" />
+                            <img src={Food1} alt="a food" className="second-image " />
                         </div>
                     </div>
                 </section>

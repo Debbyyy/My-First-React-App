@@ -1,9 +1,9 @@
 //eslint-disble-next-line
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import NewAccount from '../components/createAccount';
-import HomePage from '../components/home';
-import MyProfile from '../components/profile';
+import NewAccount from './components/createAccount';
+import HomePage from './components/home';
+import MyProfile from './components/profile';
 
 function App() {
   return (

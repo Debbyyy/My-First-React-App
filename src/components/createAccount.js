@@ -1,6 +1,5 @@
 import React from 'react';
 import '../createAccount.css';
-import { useForm } from 'react-hook-form';
 
 class NewAccount extends React.Component {
     handleSubmit = (e) => {
