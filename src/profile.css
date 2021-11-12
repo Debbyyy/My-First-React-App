@@ -1,0 +1,40 @@
+.avatar {
+    height: 12vh;
+    border-radius: 50%;
+}
+.hero-image {
+    height: 35vh;
+    opacity: 0.8;
+}
+li {
+    color: #c9c9c9;
+}
+.hero-section {
+    position: relative;
+    border-radius: 20px;
+    background-color: rgb(27, 27, 27);
+    padding: 50px;
+    /* margin-right: 200px; */
+}
+.second-image {
+    height: 25vh;
+    width: 20vw;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    right: 6px;
+    /* float: right; */
+}
+/* @media (min-width: 640px) {
+    .hero-image {
+        height: 18vh;
+    }
+}
+@media (min-width: 640px) {
+   .second-image {
+    height: 19vh;
+    width: 20vw;
+    right: 8px;
+    top: 6px;
+   }
+} */

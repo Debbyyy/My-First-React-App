@@ -7,7 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  background-image: url(./images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#logo-color {
+  color: #ffdc2a;
+}
+.part-one {
+  margin: 50px 0 0 0;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+.btn {
+  background-color: #ffdc2a;
+  border-radius: 7px;
+  text-transform: capitalize;
+  margin: 10px 400px;
 }
