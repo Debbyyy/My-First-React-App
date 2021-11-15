@@ -39,7 +39,7 @@ class MyProfile extends Component {
 
                     <p className="mb-2 text-gray-500">Most Viewed</p>
 
-                    <div className="flex flex-row">
+                    <div className="flex flex-col md:flex-row">
                         <img src={Food1} alt="a food" className="hero-image rounded-2xl mb-10 mr-5" />
                         <img src={Food2} alt="a food" className="hero-image rounded-2xl mb-10 mr-5" />
                         <img src={Food1} alt="a food" className="hero-image rounded-2xl mb-10 mr-5" />

@@ -15,15 +15,8 @@ body {
 #logo-color {
   color: #ffdc2a;
 }
-.part-one {
-  margin: 50px 0 0 0;
-  font-size: 30px;
-  text-align: center;
-  color: #fff;
-}
 .btn {
   background-color: #ffdc2a;
   border-radius: 7px;
   text-transform: capitalize;
-  margin: 10px 400px;
 }
