@@ -6,11 +6,15 @@ import '../profile.css';
 
 class MyProfile extends Component {
     render() {
+        // console.log('debbie', this.context);
+        // const { username } = this.context;
+        // const name = username ? username : (console.log('please add your name'));
         return (
             <div className="text-white flex flex-col font-bold bg-gray-800 p-10 bg-none">
                 <header className="flex flex-row justify-between">
                     <div>
                         <h3 className="text-4xl">Hi Debbie</h3>
+                        {/* <h3 className="text-4xl" onChange={this.handleChange}>i</h3> */}
                         <p className="text-xl">We hope you're in a cooking mood</p>
                     </div>
 

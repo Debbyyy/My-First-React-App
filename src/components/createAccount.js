@@ -2,11 +2,19 @@ import React from 'react';
 import '../createAccount.css';
 
 class NewAccount extends React.Component {
+    /*state = {
+        username: ''
+    }
+    onUsernameChange = (e) => {
+        this.setState({
+            username: e.target.value
+        });
+    }
     handleSubmit = (e) => {
         e.preventDefault();
         console.log('user submitted');
         this.props.history.push('/profile')
-    }
+    }*/
     render() {
     return(
         // return(
@@ -17,6 +25,7 @@ class NewAccount extends React.Component {
             onSubmit={this.handleSubmit}>
                 <label htmlFor="First name">
                     <input type="text" placeholder="First name" id="fname"
+                    // value={this.state.username} onChange={this.onUsernameChange}
                         className="outline-none border border-gray-400 pr-40 pl-5 py-2 mb-5" required />
                 </label>
                 {/* {this.state.fnameError ? this.state.fnameError : null} */}
