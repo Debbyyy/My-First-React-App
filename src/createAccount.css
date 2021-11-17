@@ -1,11 +1,6 @@
 .my-colour {
     border: 1px solid #ffdc2a;
 }
-#btn {
-    /* background-color: #ffdc2a; */
-    /* border-radius: 15px; */
-    background-color: #c9c9c9;
-}
 /* check for code sandbox
 check formik too 
 yarn add react-hook-form */
