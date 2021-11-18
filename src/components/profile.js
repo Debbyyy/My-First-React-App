@@ -8,6 +8,13 @@ class MyProfile extends Component {
     state = {
         open: false
     };
+    handleAvatar = () => {
+        this.setState((state) => {
+            return {
+                open: !state.open
+            }
+        })
+    }
     handleClick = () => {
         this.setState((state) => {
             return {
@@ -26,13 +33,25 @@ class MyProfile extends Component {
                     </div>
 
                     <div>
-                        <img src={Debbie} alt="user's avatar" className="avatar" />
+                        <img src={Debbie} alt="user's avatar" className="hidden md:flex h-16 md:h-24 w-20 md:w-24 rounded-full" />
                     </div>
+
+                    <div className="sm:flex md:hidden inline-block relative">
+                    <img src={Debbie} alt="user's avatar" className="h-16 md:h-24 w-20 md:w-24 rounded-full" onClick={this.handleAvatar}/>
+                                {this.state.open && (
+                                    <div className="top-full absolute -right-px" id="sm-screen-content">
+                                        <a href="#" className="float-none text-white px-5 py-4 no-underline block text-left">Edit profile</a>
+                                        <a href="#" className="float-none text-white px-5 py-4 no-underline block text-left">Place an order</a>
+                                        <a href="#" className="float-none text-white px-5 py-4 no-underline block text-left">User preferences</a>
+                                        <a href="#" className="float-none text-white px-5 py-4 no-underline block text-left">Settings</a>
+                                    </div>
+                                )}
+                            </div>
                 </header>
 
                 <section>
                     <div>
-                        <div className="bg-black rounded-xl py-4 px-2 md:mr-96 mb-10 mt-5 text-white">
+                        <div className="bg-black rounded-xl py-4 px-2 md:mr-96 mb-4 md:mb-10 mt-5 text-white">
                             <input type="text" placeholder="Search our collection" className="bg-black" />
                             {/* add a search icon */}
                         </div>
@@ -46,6 +65,7 @@ class MyProfile extends Component {
                                 <li className="bg-black px-3 md:px-5 py-2 rounded-xl text-sm md:text-base">Japanese Dishes</li>
                             </ul>
 
+                            {/* code for small screens starts here */}
                             <div className="sm:flex md:hidden inline-block relative">
                                 <button className="outline-none rounded-xl text-sm py-2 px-4 md:px-14 bg-black m-0" id="sm-screen" onClick={this.handleClick}>New Entry</button>
                                 {this.state.open && (
@@ -57,10 +77,11 @@ class MyProfile extends Component {
                                     </div>
                                 )}
                             </div>
+                            {/* code for small screens end here */}
                         </div>
                     </div>
 
-                    <p className="mb-2 text-gray-500">Most Viewed</p>
+                    <p className="mt-4 md:mt-0 mb-2 text-gray-500">Most Viewed</p>
 
                     <div className="flex flex-col md:flex-row">
                         <img src={Food1} alt="a food" className="hero-image rounded-2xl mb-10 mr-5" />
@@ -72,7 +93,7 @@ class MyProfile extends Component {
                         <p className="mb-2 text-gray-500">This might interest you</p>
                         <div className="bg-black p-14 md:p-20 relative rounded-3xl">
                             <p>Spaghetti recipe</p>
-                            <img src={Food1} alt="a food" className="second-image" id="sec-img" />
+                            <img src={Food1} alt="a food" className="second-image"/>
                         </div>
                     </div>
                 </section>

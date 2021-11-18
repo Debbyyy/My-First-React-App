@@ -1,7 +1,6 @@
 import React, { createContext } from 'react';
 
 export const userContext = createContext();
-
 class UserContextProvider extends React.Component {
     state = {
         username: ''
