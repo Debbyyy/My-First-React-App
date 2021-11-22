@@ -22,12 +22,13 @@ class MyProfile extends Component {
             }
         })
     }
+    
     render() {
         return (
             <div className="text-white flex flex-col font-bold bg-gray-800 p-10 bg-none">
                 <header className="flex flex-row justify-between">
                     <div>
-                        <h3 className="text-4xl">Hi Debbie</h3>
+                        <h3 className="text-4xl">Hi {this.username}</h3>
                         {/* <h3 className="text-4xl" onChange={this.handleChange}>i</h3> */}
                         <p className="text-xl">We hope you're in a cooking mood</p>
                     </div>
@@ -52,7 +53,7 @@ class MyProfile extends Component {
                 <section>
                     <div>
                         <div className="bg-black rounded-xl py-4 px-2 md:mr-96 mb-4 md:mb-10 mt-5 text-white">
-                            <input type="text" placeholder="Search our collection" className="bg-black" />
+                            <input type="text" placeholder="Search our collection" className="bg-black outline-none" />
                             {/* add a search icon */}
                         </div>
 
